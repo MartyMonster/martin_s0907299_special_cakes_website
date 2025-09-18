@@ -1,0 +1,114 @@
+/* BASIC PAGE SETUP */
+body {
+  /* Use the font the documents asked for */
+  font-family: Arial, sans-serif;
+  /* Light background so text is easy to read */
+  background: #fdfdfd;
+  color: #333;
+  margin: 0;
+  line-height: 1.6; /* more space between lines */
+}
+
+/* Headings */
+h1, h2, h3 {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+/* BRAND COLOURS */
+.burntred { color: #E94D40; }
+.navyblue { color: #0C243C; }
+
+/* BRAND FONT CLASS */
+.specialcakesfont { font-family: Arial, sans-serif; }
+
+/* SIMPLE LAYOUT HELPERS */
+/* Float something to the left or right then clear it */
+.floatleft  { float: left;  margin: 0 15px 15px 0; }
+.floatright { float: right; margin: 0 0 15px 15px; }
+.clearboth  { clear: both; }
+
+/* BANNER + LOGO */
+/* Banner should stretch full width */
+.banner {
+  width: 100%;
+  display: block;
+}
+
+/* Keep logo from getting too big */
+.logo {
+  max-width: 150px;
+  margin: 10px;
+  background: #fff; /* logo on white background as required */
+}
+
+/* NAVIGATION BAR */
+nav {
+  background: #0C243C; /* navy */
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  color: #fff;         /* white text for contrast */
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #E94D40;      /* burnt red on hover */
+}
+
+/*  TABLES */
+/* Simple table look that is easy to read */
+table {
+  width: 100%;
+  border-collapse: collapse; /* removes double borders */
+  margin: 20px 0;
+}
+table, th, td {
+  border: 1px solid #ccc; /* light grey borders */
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background: #0C243C; /* navy header row */
+  color: #fff;
+}
+
+/* FORMS */
+/* Make inputs stretch the width and add some padding */
+form { margin: 20px 0; }
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+input[type="submit"],
+button {
+  background: #E94D40; /* burnt red button */
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover,
+button:hover {
+  background: #c43c32; /* a bit darker on hover */
+}
+
+/* FOOTER */
+footer {
+  background: #0C243C;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 0.9em;
+}

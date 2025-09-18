@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cakes for Sale — Special Cakes for All Occasions</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Banner + Logo -->
+  <img src="images/banner.jpg" alt="Special Cakes promotional banner" class="banner" />
+  <a href="index.html" title="Back to Home">
+    <img src="images/logo.png" alt="Special Cakes for All Occasions logo" class="logo" />
+  </a>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="cakes-for-sale.html">Cakes for Sale</a>
+    <a href="about-us.html">About</a>
+    <a href="contact-us.html">Contact Us</a>
+  </nav>
+
+  <main class="specialcakesfont">
+    <h1 class="navyblue">Cakes for Sale</h1>
+
+    <!-- 6 product images.Small image links to a larger version -->
+    <div>
+      <figure class="floatleft" style="max-width: 300px;">
+        <a href="images/large/decoratedCake640.jpg" title="View larger image">
+          <img src="images/small/decoratedCake300.jpg" alt="Speciality decorated cake" />
+        </a>
+        <figcaption>Speciality cakes</figcaption>
+      </figure>
+
+      <figure class="floatleft" style="max-width: 300px;">
+        <a href="images/large/chocolateCake640.jpg" title="View larger image">
+          <img src="images/small/chocolateCake300.jpg" alt="Flavoured chocolate cake" />
+        </a>
+        <figcaption>Flavoured cakes</figcaption>
+      </figure>
+
+      <figure class="floatleft" style="max-width: 300px;">
+        <a href="images/large/cheeseCake640.jpg" title="View larger image">
+          <img src="images/small/cheeseCake300.jpg" alt="Classic cheesecake" />
+        </a>
+        <figcaption>Cheesecakes</figcaption>
+      </figure>
+
+      <figure class="floatleft" style="max-width: 300px;">
+        <a href="images/large/brownie640.jpg" title="View larger image">
+          <img src="images/small/brownie300.jpg" alt="Chocolate brownie" />
+        </a>
+        <figcaption>Brownies</figcaption>
+      </figure>
+
+      <figure class="floatleft" style="max-width: 300px;">
+        <a href="images/large/cupcake640.jpg" title="View larger image">
+          <img src="images/small/cupcake300.jpg" alt="Assorted cupcakes" />
+        </a>
+        <figcaption>Cupcakes</figcaption>
+      </figure>
+
+      <figure class="floatleft" style="max-width: 300px;">
+        <a href="images/large/macaron640.jpg" title="View larger image">
+          <img src="images/small/macaron300.jpg" alt="Colourful macarons" />
+        </a>
+        <figcaption>Macarons</figcaption>
+      </figure>
+
+      <div class="clearboth"></div>
+    </div>
+
+    <!-- Prices table -->
+    <h2 class="burntred">Prices</h2>
+    <table aria-label="Cake sizes and prices">
+      <thead>
+        <tr>
+          <th scope="col">Cake Size</th>
+          <th scope="col">Suitable for</th>
+          <th scope="col">Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Small</td>
+          <td>8-10 people</td>
+          <td>$50.00</td>
+        </tr>
+        <tr>
+          <td>Medium</td>
+          <td>10-12 people</td>
+          <td>$60.00</td>
+        </tr>
+        <tr>
+          <td>Large</td>
+          <td>16-10 people</td>
+          <td>$100.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- How to order form -->
+    <h2 class="burntred">How to order</h2>
+    <p>If you’re interested in ordering a cake for your special occasion, let us know!</p>
+
+    <form action="mailto:specialcakes@email.com" method="post">
+      <label for="order-name">Name</label>
+      <input type="text" id="order-name" name="name" required />
+
+      <label for="order-email">Email address</label>
+      <input type="email" id="order-email" name="email" required />
+
+      <label for="order-phone">Phone number</label>
+      <input type="text" id="order-phone" name="phone" required />
+
+      <label for="order-type">The type of cake required</label>
+      <input type="text" id="order-type" name="cake_type" placeholder="Speciality / Flavoured / Cheesecake / Brownie / Cupcake / Macaron" required />
+
+      <label for="order-date">Date required</label>
+      <input type="text" id="order-date" name="date_required" placeholder="DD/MM/YYYY" required />
+
+      <input type="submit" value="Send order enquiry" />
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 — Martin Petkovski
+  </footer>
+
+</body>
+</html>
